@@ -30,10 +30,14 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://chat-app-frontend-d748.onrender.com",
+    origin: [
+      "https://chat-app-frontend-d748.onrender.com",
+      "https://chat-app-38ede.web.app/"
+    ],
     credentials: true,
   },
 });
+
 
 global.onlineUsers = new Map();
 io.on("connection", (socket) => {
