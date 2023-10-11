@@ -36,7 +36,7 @@ const io = socket(server, {
   cors: {
     origin: [
       "https://chat-app-frontend-d748.onrender.com",
-      "https://chat-app-38ede.web.app/",
+      "https://chat-app-38ede.web.app",
       "http://localhost:3000",
       "http://192.168.1.67:3000"
     ],
